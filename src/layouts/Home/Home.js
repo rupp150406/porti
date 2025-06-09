@@ -9,7 +9,7 @@ import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jp
 import hmsPreview from 'assets/hms-preview.png';
 import cicd from 'assets/cicd.png';
 import algoVE from 'assets/algo-ve-preview.png';
-import blockchain from 'assets/blockchain.png';
+import image from 'assets/image.png';
 import algoVE2 from 'assets/algoVE2.png';
 import stockDash from 'assets/stock-dashboard.png';
 import stockDash2 from 'assets/stockDash2.png';
@@ -84,40 +84,46 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-1"
+        alternate
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Hostel Management System"
-        description="A platform for students to address all their hostel issues with their hostel warden"
-        buttonText="View project"
-        buttonLink="https://github.com/mayankjain25/Hostel-Management-System"
+        title="Blogin App"
+        description="Blogin App is a Flutter mobile application designed for easy creation, sharing, and consumption of blog content. It uses Hive for efficient and responsive local storage."
+        buttonText="View App"
+        buttonLink="https://github.com/rupp150406/Blogin/releases/tag/v2.0.0"
         model={{
-          type: 'laptop',
-          alt: 'Displaying the home page of the website.',
+          type: 'phone',
+          alt: 'App login screen',
           textures: [
             {
-              srcSet: [hmsPreview, hmsPreview],
-              placeholder: sprTexturePlaceholder,
+              srcSet: [stockDash],
+              placeholder: gamestackTexturePlaceholder,
+            },
+            {
+              srcSet: [stockDash2],
+              placeholder: gamestackTexture2Placeholder,
             },
           ],
         }}
       />
+      
       <ProjectSummary
         id="project-2"
         // alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Blockchain Based FIR Registration System"
-        description="A blockchain based FIR registration system to ensure transparency and security of the data to facilitate and safeguard the interests of the victim."
+        title="Focus : Laravel Todolist WebApp"
+        description="A simple web application built with Laravel for managing your to-do lists efficiently."
         buttonText="Visit repository"
-        buttonLink="https://github.com/mayankjain25/Blockchain-Based-FIR-System"
+        buttonLink="https://github.com/rupp150406/todolist"
         model={{
           type: 'laptop',
           alt: 'landing page',
           textures: [
             {
-              srcSet: [blockchain],
+              srcSet: [image],
               placeholder: gamestackTexturePlaceholder,
             },
           ],
@@ -128,10 +134,10 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="CI/CD Pipeline using Jenkins and Docker"
-        description="his is a basic starter website that was built incorporating a CI/CD Pipeline involving GitHub Webhooks and Jenkins. Every push is deployed via an nginx docker container"
-        buttonText="View project"
-        buttonLink="https://github.com/mayankjain25/Microo-Starter-Website"
+        title="Fariz Risol : Food Catalog Website "
+        description="A dedicated food catalog website for Fariz Risol, showcasing their delicious range of risol products. It provides customers with an easy-to-browse platform to explore various flavors and fillings."
+        buttonText="View Website"
+        buttonLink="https://fariz-risol.vercel.app"
         model={{
           type: 'laptop',
           alt: 'Visual description of the pipeline workflow',
@@ -145,25 +151,20 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-4"
-        alternate
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         index={4}
-        title="Stocks Dashboard"
-        description="A dashboard to display some of the top performing stocks in the Indian market"
-        buttonText="View website"
-        buttonLink="http://stock-dashboard.kiitians.com/"
+        title="Hostel Management System"
+        description="A platform for students to address all their hostel issues with their hostel warden"
+        buttonText="View project"
+        buttonLink="https://github.com/mayankjain25/Hostel-Management-System"
         model={{
-          type: 'phone',
-          alt: 'App login screen',
+          type: 'laptop',
+          alt: 'Displaying the home page of the website.',
           textures: [
             {
-              srcSet: [stockDash],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [stockDash2],
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: [hmsPreview, hmsPreview],
+              placeholder: sprTexturePlaceholder,
             },
           ],
         }}

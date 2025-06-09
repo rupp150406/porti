@@ -20,25 +20,13 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I&apos;m Mayank, currently enrolled at{' '}
-      <Link href="https://kiit.ac.in">KIIT University</Link> to pursue an engineering
+      I&apos;m Fariz, currently enrolled at{' '}
+      <Link href="https://idn.ac.id">IDN Polythecnic</Link> to pursue an engineering
       degree in Information Technology. My area of expertise in web development is the
       MERN stack. As a self-taught developer, I&apos;m constantly searching for ways to
       improve. I pick things up quickly, and I&apos;m constantly eager to learn something
       new. I work well in teams and am constantly willing to lend a hand. In addition to
-      this, I am a <b>Content Writer/Marketer</b> as well.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am a member of the{' '}
-      <Link href="https://msckiit.tech">
-        Microsoft Learn Student Ambassadors, KIIT Chapter
-      </Link>{' '}
-      as a{' '}
-      <span style={{ fontWeight: 'bold' }}>Creative Lead and Operations Executive</span>{' '}
-      and <span style={{ fontWeight: 'bold' }}>Senior Executive</span> at the{' '}
-      <Link href="https://ecell.org.in">KIIT Entrepreneurship Cell</Link>. I&apos;ve
-      helped organised several events having a cumulative footfall of more than 3000+
-      people, and have the experience of managing a team of 100+ members as well.
+      this, I am a <b>Artist/Photographer</b> as well.
     </Text>
   </Fragment>
 );

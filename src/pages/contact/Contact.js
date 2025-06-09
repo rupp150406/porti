@@ -17,64 +17,36 @@ import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
   const form = useRef();
-  // const errorRef = useRef();
   const email = useFormInput('');
   const message = useFormInput('');
 
   const [sending, setSending] = useState(false);
   const [complete, setComplete] = useState(false);
-  // const [statusError, setStatusError] = useState('');
   const initDelay = tokens.base.durationS;
 
   const onSubmit = async event => {
     event.preventDefault();
-    // setStatusError('');
 
     if (sending) return;
 
     try {
       setSending(true);
 
-      // const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/message`, {
-      //   method: 'POST',
-      //   mode: 'cors',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify({
-      //     email: email.value,
-      //     message: message.value,
-      //   }),
-      // });
-      // console.log(form.current);
       emailjs
         .sendForm(
-          'service_nazmh8l',
-          'template_g5tsvbh',
+          'service_fxnc5ej', // ✅ ID emailjs barumu
+          'template_85u8wn6',
           form.current,
-          'F0PrBEbycNEQrkIFx'
+          'yB1urhhwcxNmym804'
         )
         .then(res => {
-          // setSenderEmail('');
-          // setSenderMsg('');
           console.log(res);
         });
-
-      // const responseMessage = await response.json();
-
-      // const statusError = getStatusError({
-      //   status: response?.status,
-      //   errorMessage: responseMessage?.error,
-      //   fallback: 'There was a problem sending your message',
-      // });
-
-      // if (statusError) throw new Error(statusError);
 
       setComplete(true);
       setSending(false);
     } catch (error) {
-      // setSending(false);
-      // setStatusError(error.message);
+      // Optional: bisa tambahkan error handling di sini
     }
   };
 
@@ -125,24 +97,6 @@ export const Contact = () => {
               maxLength={4096}
               {...message}
             />
-            {/* <Transition in={statusError} timeout={msToNum(tokens.base.durationM)}>
-              {errorStatus => (
-                <div
-                  className={styles.formError}
-                  data-status={errorStatus}
-                  style={cssProps({
-                    height: errorStatus ? errorRef.current?.offsetHeight : 0,
-                  })}
-                >
-                  <div className={styles.formErrorContent} ref={errorRef}>
-                    <div className={styles.formErrorMessage}>
-                      <Icon className={styles.formErrorIcon} icon="error" />
-                      {statusError}
-                    </div>
-                  </div>
-                </div>
-              )}
-            </Transition> */}
             <Button
               className={styles.button}
               data-status={status}
@@ -197,25 +151,6 @@ export const Contact = () => {
     </Section>
   );
 };
-
-// function getStatusError({
-//   status,
-//   errorMessage,
-//   fallback = 'There was a problem with your request',
-// }) {
-//   if (status === 200) return false;
-
-//   const statuses = {
-//     500: 'There was a problem with the server, try again later',
-//     404: 'There was a problem connecting to the server. Make sure you are connected to the internet',
-//   };
-
-//   if (errorMessage) {
-//     return errorMessage;
-//   }
-
-//   return statuses[status] || fallback;
-// }
 
 function getDelay(delayMs, offset = numToMs(0), multiplier = 1) {
   const numDelay = msToNum(delayMs) * multiplier;

@@ -154,10 +154,10 @@ export const Home = () => {
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         index={4}
-        title="Hostel Management System"
-        description="A platform for students to address all their hostel issues with their hostel warden"
-        buttonText="View project"
-        buttonLink="https://github.com/mayankjain25/Hostel-Management-System"
+        title="Tikety : Ticket Booking Website"
+        description="Tikety is a comprehensive platform for seamless ticket booking, available as a website. It offers users a convenient way to browse, select, and purchase tickets for various events and services."
+        buttonText="View repository"
+        buttonLink="https://github.com/rupp150406/tiket-wisata-ori"
         model={{
           type: 'laptop',
           alt: 'Displaying the home page of the website.',

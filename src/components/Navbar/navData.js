@@ -33,9 +33,4 @@ export const socialLinks = [
     url: 'https://www.linkedin.com/in/mayank-jain-688409208/',
     icon: 'linkedin',
   },
-  {
-    label: 'Leetcode',
-    url: 'https://leetcode.com/jainmayank2509/',
-    icon: 'leetcode',
-  },
 ];

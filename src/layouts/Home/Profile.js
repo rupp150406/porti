@@ -12,7 +12,7 @@ import { Transition } from 'components/Transition';
 import { Fragment, useState } from 'react';
 import { media } from 'utils/style';
 import styles from './Profile.module.css';
-import myImage from 'assets/mayank.jpg';
+import myImage from 'assets/rupp.jpg';
 
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
@@ -92,7 +92,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   placeholder={profileImgPlaceholder}
                   srcSet={[myImage, myImage]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
+                  alt="Me use my best pose and editing to make it look cool"
                 />
                 <svg
                   aria-hidden="true"

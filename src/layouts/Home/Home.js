@@ -21,7 +21,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Student', 'artist', 'photographer'];
+const disciplines = ['Mahasiswa', 'fotografer'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -88,9 +88,9 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Blogin App"
-        description="Blogin App is a Flutter mobile application designed for easy creation, sharing, and consumption of blog content. It uses Hive for efficient and responsive local storage."
-        buttonText="View App"
+        title="Aplikasi Blogin"
+        description="Blogin App adalah aplikasi seluler Flutter yang dirancang untuk memudahkan pembuatan, berbagi, dan penggunaan konten blog. Aplikasi ini menggunakan Hive untuk penyimpanan lokal yang efisien dan responsif."
+        buttonText="Lihat Aplikasi"
         buttonLink="https://github.com/rupp150406/Blogin/releases/tag/v2.0.0"
         model={{
           type: 'phone',
@@ -115,8 +115,8 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Focus : Laravel Todolist WebApp"
-        description="A simple web application built with Laravel for managing your to-do lists efficiently."
-        buttonText="Visit repository"
+        description="Aplikasi web sederhana yang dibangun dengan Laravel untuk mengelola daftar tugas Anda secara efisien."
+        buttonText="Kunjungi repositori"
         buttonLink="https://github.com/rupp150406/todolist"
         model={{
           type: 'laptop',
@@ -135,8 +135,8 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Fariz Risol : Food Catalog Website "
-        description="A dedicated food catalog website for Fariz Risol, showcasing their delicious range of risol products. It provides customers with an easy-to-browse platform to explore various flavors and fillings."
-        buttonText="View Website"
+        description="Situs web katalog makanan khusus untuk Fariz Risol, yang memamerkan berbagai produk risol mereka yang lezat. Situs ini menyediakan platform yang mudah dijelajahi bagi pelanggan untuk menjelajahi berbagai rasa dan isian."
+        buttonText="Kunjungi Website"
         buttonLink="https://fariz-risol.vercel.app"
         model={{
           type: 'laptop',
@@ -155,8 +155,8 @@ export const Home = () => {
         visible={visibleSections.includes(projectFour.current)}
         index={4}
         title="Tikety : Ticket Booking Website"
-        description="Tikety is a comprehensive platform for seamless ticket booking, available as a website. It offers users a convenient way to browse, select, and purchase tickets for various events and services."
-        buttonText="View repository"
+        description="Tikety adalah platform lengkap untuk pemesanan tiket yang mudah, tersedia sebagai situs web. Tikety menawarkan cara mudah bagi pengguna untuk menelusuri, memilih, dan membeli tiket untuk berbagai acara dan layanan."
+        buttonText="Kunjungi repositori"
         buttonLink="https://github.com/rupp150406/tiket-wisata-ori"
         model={{
           type: 'laptop',

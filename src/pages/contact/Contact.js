@@ -66,7 +66,7 @@ export const Contact = () => {
               as="h1"
               style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
             >
-              <DecoderText text="Say hello" start={status !== 'exited'} delay={300} />
+              <DecoderText text="Get in touch" start={status !== 'exited'} delay={300} />
             </Heading>
             <Divider
               className={styles.divider}
@@ -80,7 +80,7 @@ export const Contact = () => {
               name="user_email"
               style={getDelay(tokens.base.durationXS, initDelay)}
               autoComplete="email"
-              label="Your Email"
+              label="Email Anda"
               type="email"
               maxLength={512}
               {...email}
@@ -92,7 +92,7 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationS, initDelay)}
               autoComplete="off"
-              label="Message"
+              label="Pesan"
               name="message"
               maxLength={4096}
               {...message}
@@ -108,7 +108,7 @@ export const Contact = () => {
               icon="send"
               type="submit"
             >
-              Send message
+              Kirim Pesan
             </Button>
           </form>
         )}

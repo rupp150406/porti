@@ -1,24 +1,24 @@
 export const navLinks = [
   {
-    label: 'Projects',
+    label: 'Proyek',
     pathname: '/#project-1',
   },
   {
-    label: 'Details',
+    label: 'Deskripsi',
     pathname: '/#details',
   },
   {
-    label: 'Articles',
+    label: 'Artikel',
     pathname: '/articles',
   },
   {
-    label: 'Contact',
+    label: 'Kontak',
     pathname: '/contact',
   },
   {
     label: 'Resume',
     pathname:
-      'https://drive.google.com/file/d/1w0fSvU6YW2pG-HmDci4CAR_KE_K9zE0L/view?usp=sharing',
+      'https://drive.google.com/file/d/1Giaube_d4ZNzdRGWt1ZpgFx-UOsd8sGh/view?usp=sharing',
   },
 ];
 

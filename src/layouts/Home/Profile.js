@@ -20,13 +20,8 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I&apos;m Fariz, currently enrolled at{' '}
-      <Link href="https://idn.ac.id">IDN Polythecnic</Link> to pursue an engineering
-      degree in Information Technology. My area of expertise in web development is the
-      MERN stack. As a self-taught developer, I&apos;m constantly searching for ways to
-      improve. I pick things up quickly, and I&apos;m constantly eager to learn something
-      new. I work well in teams and am constantly willing to lend a hand. In addition to
-      this, I am a <b>Artist/Photographer</b> as well.
+    Saya Fariz, saat ini terdaftar di {' '}
+    <Link href="https://idn.ac.id">Politeknik IDN</Link> untuk mengejar gelar teknik di bidang Teknologi Informasi. Bidang keahlian saya dalam pengembangan web adalah tumpukan MERN. Sebagai pengembang otodidak, saya terus mencari cara untuk meningkatkan kemampuan. Saya memahami banyak hal dengan cepat, dan saya selalu ingin mempelajari sesuatu yang baru. Saya bekerja dengan baik dalam tim dan selalu bersedia membantu. Selain itu, saya juga seorang <b>Seniman/Fotografer</b>.
     </Text>
   </Fragment>
 );
@@ -58,7 +53,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 href="/contact"
                 icon="send"
               >
-                Send me a message
+                Kirimi saya pesan
               </Button>
             </div>
             <div className={styles.column}>

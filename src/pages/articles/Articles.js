@@ -50,7 +50,7 @@ const ArticlesPost = ({
     >
       {featured && (
         <Text className={styles.postLabel} size="s">
-          Featured
+          Utama
         </Text>
       )}
       {featured && !!banner && (
@@ -84,7 +84,7 @@ const ArticlesPost = ({
             </Text>
             <div className={styles.postFooter}>
               <Button secondary iconHoverShift icon="chevronRight" as="div">
-                Read article
+                Baca artikel
               </Button>
               <Text className={styles.timecode} size="s">
                 {timecode}
@@ -113,7 +113,7 @@ const SkeletonPost = ({ index }) => {
         <div className={styles.postDetails}>
           <div aria-hidden className={styles.postDate}>
             <Divider notchWidth="64px" notchHeight="8px" />
-            Coming soon...
+            Akan datang...
           </div>
           <Heading
             className={styles.skeletonBone}
@@ -129,7 +129,7 @@ const SkeletonPost = ({ index }) => {
           />
           <div className={styles.postFooter}>
             <Button secondary iconHoverShift icon="chevronRight" as="div">
-              Read more
+              Baca lebih banyak
             </Button>
             <Text className={styles.timecode} size="s">
               00:00:00:00
@@ -149,7 +149,7 @@ export const Articles = ({ posts, featured }) => {
   const postsHeader = (
     <header className={styles.header}>
       <Heading className={styles.heading} level={5} as="h1">
-        <DecoderText text="Latest articles" />
+        <DecoderText text="Artikel Terbaru" />
       </Heading>
       <Barcode />
     </header>

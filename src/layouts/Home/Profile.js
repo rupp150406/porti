@@ -20,7 +20,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    Saya Fariz, mahasiswa aktif di <Link href="https://idn.ac.id">Politeknik IDN</Link>, sedang menempuh pendidikan di bidang Teknologi Informasi. Fokus saya adalah pengembangan aplikasi menggunakan kombinasi **Laravel, Flutter, dan Docker.**
+    Saya Fariz, mahasiswa aktif di <Link href="https://idn.ac.id">Politeknik IDN</Link>, sedang menempuh pendidikan di bidang Teknologi Informasi. Fokus saya adalah pengembangan aplikasi menggunakan kombinasi <b>Laravel, Flutter, dan Docker.</b>
 Sebagai pengembang otodidak, saya terbiasa belajar secara mandiri, cepat menangkap konsep baru, dan selalu tertarik mengeksplorasi teknologi yang sedang berkembang.
 Saya senang bekerja dalam tim, terbuka terhadap feedback, dan siap membantu menyelesaikan tantangan secara kolaboratif. Di luar dunia teknologi, saya juga aktif sebagai seorang <b>seniman dan fotografer</b>, memadukan kreativitas visual dengan logika teknis dalam setiap karya yang saya hasilkan.
 

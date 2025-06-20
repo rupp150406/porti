@@ -20,14 +20,17 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    Saya Fariz, mahasiswa aktif di <Link href="https://idn.ac.id">Politeknik IDN</Link>, sedang menempuh pendidikan di bidang Teknologi Informasi. Fokus saya adalah pengembangan aplikasi menggunakan kombinasi <b>Laravel, Flutter, dan Docker. </b>
-Sebagai pengembang otodidak, saya terbiasa belajar secara mandiri, cepat menangkap konsep baru, dan selalu tertarik mengeksplorasi teknologi yang sedang berkembang.
-Saya senang bekerja dalam tim, terbuka terhadap feedback, dan siap membantu menyelesaikan tantangan secara kolaboratif. Di luar dunia teknologi, saya juga aktif sebagai seorang <b>seniman dan fotografer</b>, memadukan kreativitas visual dengan logika teknis dalam setiap karya yang saya hasilkan.
+    Halo, saya Fariz. mahasiswa aktif di <Link href="https://idn.ac.id">Politeknik IDN</Link> dengan fokus di bidang Teknologi Informasi. Saat ini saya banyak berkecimpung dalam pengembangan aplikasi menggunakan Laravel, Flutter, dan Docker. Sebagai pengembang yang belajar secara otodidak, saya terbiasa memahami konsep-konsep baru dengan cepat dan punya rasa ingin tahu yang tinggi terhadap teknologi terbaru.
+Saya senang bekerja dalam tim, terbuka terhadap masukan, dan selalu siap berkontribusi untuk menyelesaikan tantangan secara kolaboratif.
+Di luar dunia teknologi, saya juga aktif sebagai seniman dan fotografer. Bagi saya, menggabungkan kreativitas visual dengan logika teknis adalah cara terbaik untuk menciptakan karya yang bermakna dan fungsional.
+
+
 
 
     </Text>
   </Fragment>
 );
+//
 
 export const Profile = ({ id, visible, sectionRef }) => {
   const [focused, setFocused] = useState(false);

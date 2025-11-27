@@ -12,7 +12,7 @@ import { Transition } from 'components/Transition';
 import { Fragment, useState } from 'react';
 import { media } from 'utils/style';
 import styles from './Profile.module.css';
-import myImage from 'assets/rupp.jpg';
+import myImage from 'assets/change.jpg';
 
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
@@ -30,7 +30,6 @@ Di luar dunia teknologi, saya juga aktif sebagai seniman dan fotografer. Bagi sa
     </Text>
   </Fragment>
 );
-//
 
 export const Profile = ({ id, visible, sectionRef }) => {
   const [focused, setFocused] = useState(false);

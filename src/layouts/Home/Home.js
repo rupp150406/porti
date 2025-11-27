@@ -9,7 +9,7 @@ import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jp
 import hmsPreview from 'assets/hms-preview.png';
 import cicd from 'assets/cicd.png';
 import algoVE from 'assets/algo-ve-preview.png';
-import image from 'assets/image.png';
+import image from 'assets/image.jpg';
 import algoVE2 from 'assets/algoVE2.png';
 import stockDash from 'assets/stock-dashboard.png';
 import stockDash2 from 'assets/stockDash2.png';
@@ -114,10 +114,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Focus : Laravel Todolist WebApp"
-        description="Aplikasi web sederhana yang dibangun dengan Laravel untuk mengelola daftar tugas Anda secara efisien."
+        title="chiori butique : Laravel E-Commerce WebApp"
+        description="Chiori Butique adalah web aplikasi e-commerce berbasis Laravel yang dibuat untuk mengelola produk, brand, user, dan transaksi dengan lebih terstruktur. WebApp ini mencakup sistem autentikasi, dashboard admin, manajemen data dengan CRUD, serta fitur upload dan pengolahan gambar untuk kebutuhan katalog toko online."
         buttonText="Kunjungi repositori"
-        buttonLink="https://github.com/rupp150406/todolist"
+        buttonLink="https://github.com/rupp150406/chiori-butique"
         model={{
           type: 'laptop',
           alt: 'landing page',

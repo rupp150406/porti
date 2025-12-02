@@ -15,10 +15,10 @@ const initDelay = 300;
 export function ProjectHeader({
   title,
   description,
-  linkLabel = 'Download Aplikasi',
   url,
   roles,
   className,
+  linkLabel = 'Download Online Version', // tambahkan ini
 }) {
   return (
     <Section className={classes(styles.header, className)} as="section">
@@ -33,7 +33,7 @@ export function ProjectHeader({
           <Text className={styles.description} size="xl" as="p">
             {description}
           </Text>
-          {!!url && (
+          {!!url && ([
             <Button
               secondary
               iconHoverShift
@@ -41,9 +41,18 @@ export function ProjectHeader({
               icon="chevronRight"
               href={url}
             >
-              {linkLabel}
+              {linkLabel}  {/* ganti "Online Version" jadi prop */}
+            </Button>,
+            <Button
+              secondary
+              iconHoverShift
+              className={styles.linkButton}
+              icon="chevronRight"
+              href={"https://github.com/rupp150406/Blogin/releases/download/v3.0.0/blogin-app.apk"}
+            >
+              {"Download Offline Version"}
             </Button>
-          )}
+          ])}
         </div>
         {!!roles?.length && (
           <ul className={styles.meta}>

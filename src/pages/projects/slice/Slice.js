@@ -1,26 +1,26 @@
-import sliceAnnotationLarge from 'assets/slice-annotation-large.png';
+import sliceAnnotationLarge from 'assets/details-large.png';
 import sliceAnnotationPlaceholder from 'assets/slice-annotation-placeholder.png';
-import sliceAnnotation from 'assets/slice-annotation.png';
+import sliceAnnotation from 'assets/details.png';
 import sliceAppLarge from 'assets/blogin-large.jpg';
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceApp from 'assets/Blogin.jpg';
-import sliceBackgroundBarLarge from 'assets/slice-background-bar-large.jpg';
+import sliceBackgroundBarLarge from 'assets/konten-large.png';
 import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from 'assets/slice-background-bar.jpg';
+import sliceBackgroundBar from 'assets/konten.png';
 import sliceBackgroundLarge from 'assets/blogin-background-large.jpg';
 import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg';
 import sliceBackground from 'assets/blogin-background.jpg';
 import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
-import sliceIrl from 'assets/slice-irl.jpg';
-import sliceSidebarAnnotationsLarge from 'assets/slice-sidebar-annotations-large.png';
+import sliceIrl from 'assets/expansi.jpg';
+import sliceSidebarAnnotationsLarge from 'assets/blog-large.png';
 import sliceSidebarAnnotationsPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
-import sliceSidebarAnnotations from 'assets/slice-sidebar-annotations.png';
-import sliceSidebarLayersLarge from 'assets/slice-sidebar-layers-large.png';
+import sliceSidebarAnnotations from 'assets/blog.png';
+import sliceSidebarLayersLarge from 'assets/home-large.jpg';
 import sliceSidebarLayersPlaceholder from 'assets/slice-sidebar-layers-placeholder.png';
-import sliceSidebarLayers from 'assets/slice-sidebar-layers.png';
-import sliceSlidesLarge from 'assets/slice-slides-large.jpg';
+import sliceSidebarLayers from 'assets/home.jpg';
+import sliceSlidesLarge from 'assets/alt-large.png';
 import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
-import sliceSlides from 'assets/slice-slides.jpg';
+import sliceSlides from 'assets/alt.png';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
@@ -71,6 +71,7 @@ export const Slice = () => {
         url="https://github.com/rupp150406/Blogin/releases/download/v2.0.0/blogin.apk"
         roles={roles}
         />
+        
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectImage
@@ -86,12 +87,13 @@ export const Slice = () => {
             <div className={styles.imagesText}>
               <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
               <ProjectSectionText>
-                Blogin App menggabungkan pembuatan konten, pengelolaan kategori, dan penyimpanan lokal dalam satu alur yang mulus. 
-                Pengguna dapat menulis blog, menambah gambar, dan mengatur kategori tanpa perlu koneksi internet berkat Hive
+                Blogin App menghadirkan alur penulisan dan pengelolaan konten yang terstruktur melalui fitur pembuatan postingan, 
+                pengaturan kategori, serta dukungan penyimpanan lokal. Pengguna dapat menulis artikel, menambahkan gambar, 
+                dan mengatur kategori sepenuhnya tanpa koneksi internet berkat integrasi Hive.
               </ProjectSectionText>
               <ProjectSectionText>
-                Pengguna bisa langsung mempublikasikan postingan mereka setelah selesai menulis, 
-                sehingga proses berbagi tulisan jadi lebih cepat dan sederhana.
+                Pada versi online sebelumnya, postingan dapat dipublikasikan langsung melalui API terhubung. Namun karena lingkungan server tidak lagi aktif, 
+                rilis saat ini berfokus pada mode offline yang tetap memberikan pengalaman menulis yang cepat, sederhana, dan dapat diandalkan.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -109,7 +111,7 @@ export const Slice = () => {
                 alt="Multiple user annotations on a shared layer."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
-            </div>
+            </div>  
           </ProjectSectionColumns>
         </ProjectSection>
         <ProjectSection light>
@@ -117,9 +119,9 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
               <ProjectSectionText>
-                Salah satu masalah di aplikasi blog pada umumnya adalah sulitnya menemukan tulisan lama atau draf sebelumnya. 
-                Untuk itu Blogin App menyediakan tampilan daftar postingan, draf, dan kategori terpisah agar navigasi makin jelas. 
-                Pengguna juga bisa memfavoritkan postingan untuk disimpan dan dibaca nanti.
+                Blogin App dirancang agar proses penulisan tetap sederhana dan terfokus. Tampilan daftar postingan dibuat ringkas sehingga pengguna dapat melihat, 
+                membuka, dan mengelola tulisan mereka dengan cepat. Kategori digunakan untuk mengelompokkan konten agar lebih mudah diatur, 
+                terutama pada mode offline yang mengandalkan penyimpanan lokal.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -154,11 +156,9 @@ export const Slice = () => {
             <div className={styles.gridText}>
               <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
               <ProjectSectionText>
-                Marking and annotating areas on high resolution biomedical images is the
-                core experience of the app, and it was easy to get lost or lose sense of
-                scale when zooming in on details. Adding measurements for the perimeter
-                and area of an annotation both helped to communicate the overall scale of
-                the image and how large the annotated feature is in comparison.
+                Setiap postingan dilengkapi dengan informasi waktu dan kategori untuk membantu pengguna menjaga struktur konten tetap teratur. 
+                Proses penambahan gambar melalui Image Picker dibuat sederhana dan intuitif, 
+                sehingga pengalaman menulis blog terasa lebih natural dan tidak mengganggu alur pengguna.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -168,9 +168,10 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Blogin App memberikan pengalaman blogging yang cepat, ringan, dan bisa diakses kapan pun berkat penyimpanan lokal Hive. 
-                Pengguna merasa terbantu karena bisa menulis kapan saja, bahkan tanpa internet. 
-                Fitur draf dan kategori mempermudah pengelolaan konten, sementara autentikasi email menjaga keamanan data pengguna.
+                Blogin App memberikan pengalaman menulis yang cepat, ringan, dan selalu dapat diakses berkat penyimpanan lokal Hive. 
+                Mode offline memungkinkan pengguna membuat serta mengatur postingan tanpa bergantung pada koneksi internet. 
+                Pengelolaan kategori membantu menjaga struktur konten tetap rapi, 
+                sementara integrasi autentikasi email pada versi online sebelumnya menjadi fondasi pengembangan fitur keamanan di masa depan.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image

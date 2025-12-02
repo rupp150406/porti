@@ -15,7 +15,7 @@ const initDelay = 300;
 export function ProjectHeader({
   title,
   description,
-  linkLabel = 'Visit website',
+  linkLabel = 'Download Aplikasi',
   url,
   roles,
   className,
@@ -60,6 +60,20 @@ export function ProjectHeader({
         )}
       </div>
     </Section>
+  );
+}
+
+export function RepositoryReview({ url, linkLabel = 'Repository & Review', className }) {
+  return (
+    <Button
+      secondary
+      iconHoverShift
+      className={classes(styles.linkButton, className)}
+      icon="chevronRight"
+      href={url}
+    >
+      {linkLabel}
+    </Button>
   );
 }
 

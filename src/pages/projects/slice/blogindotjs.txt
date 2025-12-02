@@ -41,16 +41,14 @@ import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
 const title = 'Blogin.';
-const description1 =
-  'Platform blogging mobile dengan dua mode offline-first dan online terhubung yang dirancang untuk mempermudah pengguna menulis, mengatur, dan mengelola konten di berbagai kondisi.';
-const description2 =
-  'Rilis yang tersedia saat ini berfokus pada mode offline yang sepenuhnya berjalan menggunakan penyimpanan lokal, sementara versi online sebelumnya bergantung pada API kolaboratif yang kini sudah tidak aktif';
+const description =
+  'Sebuah platform blogging mobile yang dirancang untuk memudahkan pengguna menulis dan mengelola konten di mana saja.';
 const roles = ['Flutter Development', 'UI Implementation', 'Local Storage Engineering'];
 
 export const Slice = () => {
   return (
     <Fragment>
-      <Meta title={title} prefix="Projects" description={[description1,description2]} />
+      <Meta title={title} prefix="Projects" description={description} />
       <ProjectContainer className={styles.slice}>
         <ProjectBackground
           src={sliceBackground}
@@ -59,20 +57,13 @@ export const Slice = () => {
           opacity={0.8}
         />
         <ProjectHeader
-        title={title}
-        description={
-          <>
-            {description1}  
-            <br />
-            <br /> {/* ini “gap” di antara dua kalimat */}
-            {description2}
-          </>
-        }
-        url="https://github.com/rupp150406/Blogin/releases/download/v2.0.0/blogin.apk"
-        roles={roles}
+          title={title}
+          description={description}
+          url="https://github.com/rupp150406/Blogin/releases/download/v2.0.0/blogin.apk"
+          roles={roles}
         />
         <ProjectSection>
-          <ProjectSectionContent>
+  <ProjectSectionContent>
             <ProjectImage
               srcSet={[sliceApp, sliceAppLarge]}
               placeholder={sliceAppPlaceholder}

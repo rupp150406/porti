@@ -109,26 +109,4 @@
     position: relative;
     top: -5%;
   }
-  
-}
-
-.threeImages {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--spaceL); /* jarak antar gambar */
-  align-items: start;
-}
-
-/* Responsif: di tablet turun jadi 2 kolom */
-@media (--mediaTablet) {
-  .threeImages {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Di mobile jadi 1 kolom saja */
-@media (--mediaMobile) {
-  .threeImages {
-    grid-template-columns: 1fr;
-  }
 }

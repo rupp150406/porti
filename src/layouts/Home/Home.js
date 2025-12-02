@@ -91,7 +91,7 @@ export const Home = () => {
         title="Aplikasi Blogin"
         description="Blogin App adalah aplikasi seluler Flutter yang dirancang untuk memudahkan pembuatan, berbagi, dan penggunaan konten blog. Aplikasi ini menggunakan Hive untuk penyimpanan lokal yang efisien dan responsif."
         buttonText="Lihat Aplikasi"
-        buttonLink="https://github.com/rupp150406/Blogin/releases/tag/v2.0.0"
+        buttonLink="/projects/blogin"
         model={{
           type: 'phone',
           alt: 'App login screen',

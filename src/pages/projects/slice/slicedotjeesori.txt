@@ -1,15 +1,15 @@
 import sliceAnnotationLarge from 'assets/slice-annotation-large.png';
 import sliceAnnotationPlaceholder from 'assets/slice-annotation-placeholder.png';
 import sliceAnnotation from 'assets/slice-annotation.png';
-import sliceAppLarge from 'assets/blogin-large.jpg';
+import sliceAppLarge from 'assets/slice-app-large.jpg';
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceApp from 'assets/Blogin.jpg';
+import sliceApp from 'assets/slice-app.jpg';
 import sliceBackgroundBarLarge from 'assets/slice-background-bar-large.jpg';
 import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
 import sliceBackgroundBar from 'assets/slice-background-bar.jpg';
-import sliceBackgroundLarge from 'assets/blogin-background-large.jpg';
+import sliceBackgroundLarge from 'assets/slice-background-large.jpg';
 import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg';
-import sliceBackground from 'assets/blogin-background.jpg';
+import sliceBackground from 'assets/slice-background.jpg';
 import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
 import sliceIrl from 'assets/slice-irl.jpg';
 import sliceSidebarAnnotationsLarge from 'assets/slice-sidebar-annotations-large.png';
@@ -40,17 +40,15 @@ import { Fragment } from 'react';
 import { media } from 'utils/style';
 import styles from './Slice.module.css';
 
-const title = 'Blogin.';
-const description1 =
-  'Platform blogging mobile dengan dua mode offline-first dan online terhubung yang dirancang untuk mempermudah pengguna menulis, mengatur, dan mengelola konten di berbagai kondisi.';
-const description2 =
-  'Rilis yang tersedia saat ini berfokus pada mode offline yang sepenuhnya berjalan menggunakan penyimpanan lokal, sementara versi online sebelumnya bergantung pada API kolaboratif yang kini sudah tidak aktif';
-const roles = ['Flutter Development', 'UI Implementation', 'Local Storage Engineering'];
+const title = 'Biomedical image collaboration';
+const description =
+  'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
+const roles = ['User Research', 'UX Design', 'Interface Design'];
 
 export const Slice = () => {
   return (
     <Fragment>
-      <Meta title={title} prefix="Projects" description={[description1,description2]} />
+      <Meta title={title} prefix="Projects" description={description} />
       <ProjectContainer className={styles.slice}>
         <ProjectBackground
           src={sliceBackground}
@@ -59,19 +57,12 @@ export const Slice = () => {
           opacity={0.8}
         />
         <ProjectHeader
-        title={title}
-        description={
-          <>
-            {description1}  
-            <br />
-            <br /> {/* ini “gap” di antara dua kalimat */}
-            {description2}
-          </>
-        }
-        url="https://github.com/rupp150406/Blogin/releases/download/v2.0.0/blogin.apk"
-        roles={roles}
+          title={title}
+          description={description}
+          url="https://www.best.edu.au/s/q2yjjvl7?data=8%404!9%4020303!10%40-15087&version=1"
+          roles={roles}
         />
-        <ProjectSection>
+        <ProjectSection padding="top">
           <ProjectSectionContent>
             <ProjectImage
               srcSet={[sliceApp, sliceAppLarge]}
@@ -80,18 +71,20 @@ export const Slice = () => {
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
             />
           </ProjectSectionContent>
-</ProjectSection>
+        </ProjectSection>
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
               <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
               <ProjectSectionText>
-                Blogin App menggabungkan pembuatan konten, pengelolaan kategori, dan penyimpanan lokal dalam satu alur yang mulus. 
-                Pengguna dapat menulis blog, menambah gambar, dan mengatur kategori tanpa perlu koneksi internet berkat Hive
+                Teachers needed a better way to create collaborative group activities by
+                annotating slides on Slice. Before starting this project, a layer could
+                only be annotated by a single user, making it difficult for learners to
+                work together.
               </ProjectSectionText>
               <ProjectSectionText>
-                Pengguna bisa langsung mempublikasikan postingan mereka setelah selesai menulis, 
-                sehingga proses berbagi tulisan jadi lebih cepat dan sederhana.
+                Our solution was to allow users to be invited to a layer, where they can
+                see others’ annotations and make their own.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -117,9 +110,12 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
               <ProjectSectionText>
-                Salah satu masalah di aplikasi blog pada umumnya adalah sulitnya menemukan tulisan lama atau draf sebelumnya. 
-                Untuk itu Blogin App menyediakan tampilan daftar postingan, draf, dan kategori terpisah agar navigasi makin jelas. 
-                Pengguna juga bisa memfavoritkan postingan untuk disimpan dan dibaca nanti.
+                A problem we heard about often form users was that it was difficult to
+                find images they had previously seen or worked on. To solve this we added
+                a new tab that lists all previously annotated slides. In addition, we
+                added the ability to favorite slides, so if users find an interesting
+                slide they want to annotate later, they can easily save it to their
+                account.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -168,9 +164,11 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Blogin App memberikan pengalaman blogging yang cepat, ringan, dan bisa diakses kapan pun berkat penyimpanan lokal Hive. 
-                Pengguna merasa terbantu karena bisa menulis kapan saja, bahkan tanpa internet. 
-                Fitur draf dan kategori mempermudah pengelolaan konten, sementara autentikasi email menjaga keamanan data pengguna.
+                Real-time collaborative annotation facilitated better collaboration
+                between learners, and was much easier to run group exercises with the new
+                shared layers feature. Learners gave feedback that is was enjoyable to
+                work together and see what others were doing, and liked how interactive
+                and easy to use the application was.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image

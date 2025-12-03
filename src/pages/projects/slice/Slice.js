@@ -1,29 +1,29 @@
-import sliceAnnotationLarge from 'assets/details-large.png';
+import sliceAnnotationLarge from 'assets/details-large.png';                                                //details-large.png
 import sliceAnnotationPlaceholder from 'assets/slice-annotation-placeholder.png';
-import sliceAnnotation from 'assets/details.png';
-import sliceAppLarge from 'assets/blogin-large.jpg';
+import sliceAnnotation from 'assets/details.png';                                                           //details.png
+import sliceAppLarge from 'assets/blogin-large.jpg';                                                        //blogin-large.jpg
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceApp from 'assets/blogin.jpg';
-import sliceBackgroundBarLarge from 'assets/konten-large.png';
+import sliceApp from 'assets/blogin.jpg';                                                                   //blogin.jpg
+import sliceBackgroundBarLarge from 'assets/konten-large.png';                                              //konten-large.png
 import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from 'assets/konten.png';
-import sliceBackgroundLarge from 'assets/blogin-background-large.jpg';
+import sliceBackgroundBar from 'assets/konten.png';                                                         //konten.png
+import sliceBackgroundLarge from 'assets/blogin-background-large.jpg';                                      //blogin-background-large.jpg
 import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg';
-import sliceBackground from 'assets/blogin-background.jpg';
+import sliceBackground from 'assets/blogin-background.jpg';                                                 //blogin-background.jpg
 import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
-import sliceIrl from 'assets/expansi.jpg';
-import sliceSidebarAnnotationsLarge from 'assets/blog-large.png';
+import sliceIrl from 'assets/expansi.jpg';                                                                  //expansi.jpg
+import sliceSidebarAnnotationsLarge from 'assets/blog-large.png';                                           //blog-large.png
 import sliceSidebarAnnotationsPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
-import sliceSidebarAnnotations from 'assets/blog.png';
-import sliceSidebarLayersLarge from 'assets/home-large.jpg';
+import sliceSidebarAnnotations from 'assets/blog.png';                                                      //blog.png
+import sliceSidebarLayersLarge from 'assets/home-large.jpg';                                                //home-large.jpg
 import sliceSidebarLayersPlaceholder from 'assets/slice-sidebar-layers-placeholder.png';
-import sliceSidebarLayers from 'assets/home.jpg';
-import sliceSlidesLarge from 'assets/alt-large.png';
+import sliceSidebarLayers from 'assets/home.jpg';                                                           //home.jpg
+import sliceSlidesLarge from 'assets/alt-large.png';                                                        //alt-large.png
 import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
-import sliceSlides from 'assets/alt.png';
+import sliceSlides from 'assets/alt.png';                                                                   //alt.png
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
-import { Meta } from 'components/Meta';
+import { Meta } from 'components/Meta'; 
 import {
   ProjectBackground,
   ProjectContainer,

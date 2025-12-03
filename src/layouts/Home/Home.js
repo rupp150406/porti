@@ -8,9 +8,7 @@ import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jp
 
 import hmsPreview from 'assets/hms-preview.png';
 import cicd from 'assets/cicd.png';
-import algoVE from 'assets/algo-ve-preview.png';
 import image from 'assets/image.jpg';
-import algoVE2 from 'assets/algoVE2.png';
 import stockDash from 'assets/stock-dashboard.png';
 import stockDash2 from 'assets/stockDash2.png';
 import { Footer } from 'components/Footer';

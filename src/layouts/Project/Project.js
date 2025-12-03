@@ -33,26 +33,28 @@ export function ProjectHeader({
           <Text className={styles.description} size="xl" as="p">
             {description}
           </Text>
-          {!!url && ([
-            <Button
-              secondary
-              iconHoverShift
-              className={styles.linkButton}
-              icon="chevronRight"
-              href={url}
-            >
-              {linkLabel}  {/* ganti "Online Version" jadi prop */}
-            </Button>,
-            <Button
-              secondary
-              iconHoverShift
-              className={styles.linkButton}
-              icon="chevronRight"
-              href={"https://github.com/rupp150406/Blogin/releases/download/v3.0.0/blogin-app.apk"}
-            >
-              {"Download Offline Version"}
-            </Button>
-          ])}
+          {!!url && (
+            <>
+              <Button
+                secondary
+                iconHoverShift
+                className={styles.linkButton}
+                icon="chevronRight"
+                href={url}
+              >
+                {linkLabel}
+              </Button>
+              <Button
+                secondary
+                iconHoverShift
+                className={styles.linkButton}
+                icon="chevronRight"
+                href="https://github.com/rupp150406/Blogin/releases/download/v3.0.0/blogin-app.apk"
+              >
+                Download Offline Version
+              </Button>
+            </>
+          )}
         </div>
         {!!roles?.length && (
           <ul className={styles.meta}>

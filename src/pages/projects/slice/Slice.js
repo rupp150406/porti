@@ -3,7 +3,7 @@ import sliceAnnotationPlaceholder from 'assets/slice-annotation-placeholder.png'
 import sliceAnnotation from 'assets/details.png';
 import sliceAppLarge from 'assets/blogin-large.jpg';
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceApp from 'assets/Blogin.jpg';
+import sliceApp from 'assets/blogin.jpg';
 import sliceBackgroundBarLarge from 'assets/konten-large.png';
 import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
 import sliceBackgroundBar from 'assets/konten.png';

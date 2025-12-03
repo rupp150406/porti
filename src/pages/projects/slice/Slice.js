@@ -4,9 +4,9 @@ import sliceAnnotation from 'assets/details.png';                               
 import sliceAppLarge from 'assets/blogin-large.jpg';                                                        //blogin-large.jpg
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceApp from 'assets/blogin.jpg';                                                                   //blogin.jpg
-import sliceBackgroundBarLarge from 'assets/konten-large.png';                                              //konten-large.png
+import sliceBackgroundBarLarge from 'assets/Konten-large.png';                                              //Konten-large.png
 import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from 'assets/konten.png';                                                         //konten.png
+import sliceBackgroundBar from 'assets/Konten.png';                                                         //Konten.png
 import sliceBackgroundLarge from 'assets/blogin-background-large.jpg';                                      //blogin-background-large.jpg
 import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg';
 import sliceBackground from 'assets/blogin-background.jpg';                                                 //blogin-background.jpg
@@ -15,9 +15,9 @@ import sliceIrl from 'assets/expansi.jpg';                                      
 import sliceSidebarAnnotationsLarge from 'assets/blog-large.png';                                           //blog-large.png
 import sliceSidebarAnnotationsPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
 import sliceSidebarAnnotations from 'assets/blog.png';                                                      //blog.png
-import sliceSidebarLayersLarge from 'assets/home-large.jpg';                                                //home-large.jpg
+import sliceSidebarLayersLarge from 'assets/Home-large.jpg';                                                //Home-large.jpg
 import sliceSidebarLayersPlaceholder from 'assets/slice-sidebar-layers-placeholder.png';
-import sliceSidebarLayers from 'assets/home.jpg';                                                           //home.jpg
+import sliceSidebarLayers from 'assets/Home.jpg';                                                           //Home.jpg
 import sliceSlidesLarge from 'assets/alt-large.png';                                                        //alt-large.png
 import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
 import sliceSlides from 'assets/alt.png';                                                                   //alt.png

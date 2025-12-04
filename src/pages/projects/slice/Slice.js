@@ -1,26 +1,26 @@
-import sliceAnnotationLarge from 'assets/details-large.png';                                                //details-large.png
-import sliceAnnotationPlaceholder from 'assets/slice-annotation-placeholder.png';
-import sliceAnnotation from 'assets/details.png';                                                           //details.png
-import sliceAppLarge from 'assets/blogin-large.jpg';                                                        //blogin-large.jpg
+import detailsLarge from 'assets/details-large.png';                                                //details-large.png
+import detailsPlaceholder from 'assets/details-placeholder.png';
+import details from 'assets/details.png';                                                           //details.png
+import bloginLarge from 'assets/blogin-large.jpg';                                                        //blogin-large.jpg
 import sliceAppPlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceApp from 'assets/blogin.jpg';                                                                   //blogin.jpg
-import sliceBackgroundBarLarge from 'assets/Konten-large.png';                                              //Konten-large.png
-import sliceBackgroundBarPlaceholder from 'assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from 'assets/Konten.png';                                                         //Konten.png
-import sliceBackgroundLarge from 'assets/blogin-background-large.jpg';                                      //blogin-background-large.jpg
+import blogin from 'assets/blogin.jpg';                                                                   //blogin.jpg
+import kontenLarge from 'assets/Konten-large.png';                                              //Konten-large.png
+import kontenPlaceholder from 'assets/konten-placeholder.jpg';
+import konten from 'assets/Konten.png';                                                         //Konten.png
+import bloginBackgroundLarge from 'assets/blogin-background-large.jpg';                                      //blogin-background-large.jpg
 import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg';
-import sliceBackground from 'assets/blogin-background.jpg';                                                 //blogin-background.jpg
-import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
-import sliceIrl from 'assets/expansi.jpg';                                                                  //expansi.jpg
-import sliceSidebarAnnotationsLarge from 'assets/blog-large.png';                                           //blog-large.png
+import bloginBackground from 'assets/blogin-background.jpg';                                                 //blogin-background.jpg
+import expansiPlaceholder from 'assets/expansi-placeholder.jpg';
+import expansi from 'assets/expansi.jpg';                                                                  //expansi.jpg
+import blogLarge from 'assets/blog-large.png';                                                            //blog-large.png
 import sliceSidebarAnnotationsPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
-import sliceSidebarAnnotations from 'assets/blog.png';                                                      //blog.png
-import sliceSidebarLayersLarge from 'assets/Home-large.jpg';                                                //Home-large.jpg
+import blog from 'assets/blog.png';                                                                         //blog.png
+import HomeLarge from 'assets/Home-large.jpg';                                                              //Home-large.jpg
 import sliceSidebarLayersPlaceholder from 'assets/slice-sidebar-layers-placeholder.png';
-import sliceSidebarLayers from 'assets/Home.jpg';                                                           //Home.jpg
-import sliceSlidesLarge from 'assets/alt-large.png';                                                        //alt-large.png
-import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
-import sliceSlides from 'assets/alt.png';                                                                   //alt.png
+import Home from 'assets/Home.jpg';                                                                         //Home.jpg
+import altLarge from 'assets/alt-large.png';                                                        //alt-large.png
+import altPlaceholder from 'assets/alt-placeholder.jpg';
+import alt from 'assets/alt.png';                                                                   //alt.png
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta'; 
@@ -42,9 +42,9 @@ import styles from './Slice.module.css';
 
 const title = 'Blogin.';
 const description1 =
-  'Platform blogging mobile dengan dua mode offline-first dan online terhubung yang dirancang untuk mempermudah pengguna menulis, mengatur, dan mengelola konten di berbagai kondisi.';
+  'Aplikasi latihan Flutter yang awalnya sederhana, lalu berkembang menjadi platform blogging mobile dengan fokus pada pengalaman menulis yang cepat, ringan, dan sepenuhnya dapat diakses secara offline.';
 const description2 =
-  'Rilis yang tersedia saat ini berfokus pada mode offline yang sepenuhnya berjalan menggunakan penyimpanan lokal, sementara versi online sebelumnya bergantung pada API kolaboratif yang kini sudah tidak aktif';
+  'Proyek ini saya buat untuk memahami arsitektur offline-first, pengelolaan data lokal dengan Hive, serta merancang antarmuka penulisan yang ringkas namun nyaman digunakan.';
 const roles = ['Flutter Development', 'UI Implementation', 'Local Storage Engineering'];
 
 export const Slice = () => {
@@ -53,60 +53,62 @@ export const Slice = () => {
       <Meta title={title} prefix="Projects" description={[description1,description2]} />
       <ProjectContainer className={styles.slice}>
         <ProjectBackground
-          src={sliceBackground}
-          srcSet={`${sliceBackground.src} 1280w, ${sliceBackgroundLarge.src} 2560w`}
+          src={bloginBackground}
+          srcSet={`${bloginBackground.src} 1280w, ${bloginBackgroundLarge.src} 2560w`}
           placeholder={sliceBackgroundPlaceholder}
           opacity={0.8}
         />
         <ProjectHeader
-        title={title}
-        description={
-          <>
-            {description1}  
-            <br />
-            <br /> {/* ini “gap” di antara dua kalimat */}
-            {description2}
-          </>
-        }
-        url="https://github.com/rupp150406/Blogin/releases/download/v2.0.0/blogin.apk"
-        roles={roles}
+          title={title}
+          description={
+            <>
+              {description1}  
+              <br />
+              <br /> {/* ini “gap” di antara dua kalimat */}
+              {description2}
+            </>
+          }
+          url="https://github.com/rupp150406/Blogin/releases/download/v2.0.0/blogin.apk"
+          roles={roles}
+          secondaryUrl="https://github.com/rupp150406/Blogin/releases/download/v3.0.0/blogin-app.apk"
+          // secondaryLabel bisa di-skip kalau mau pakai default "Download Offline Version"
+          // secondaryLabel="Download Offline Version"
         />
-        
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectImage
-              srcSet={[sliceApp, sliceAppLarge]}
+              srcSet={[blogin, bloginLarge]}
               placeholder={sliceAppPlaceholder}
               alt="The Slice web application showing a selected user annotation."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
             />
           </ProjectSectionContent>
-</ProjectSection>
+        </ProjectSection>
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
               <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
               <ProjectSectionText>
-                Blogin App menghadirkan alur penulisan dan pengelolaan konten yang terstruktur melalui fitur pembuatan postingan, 
-                pengaturan kategori, serta dukungan penyimpanan lokal. Pengguna dapat menulis artikel, menambahkan gambar, 
-                dan mengatur kategori sepenuhnya tanpa koneksi internet berkat integrasi Hive.
+                Pada tahap awal pengembangan, saya berfokus pada membangun fondasi aplikasi melalui perancangan struktur data, 
+                tampilan daftar postingan, serta editor penulisan dasar. Seluruh proses dirancang agar alurnya terasa ringan dan 
+                mudah digunakan. Pengguna dapat menulis artikel, menambahkan gambar melalui Image Picker, 
+                serta menyimpan konten secara lokal menggunakan Hive tanpa memerlukan koneksi internet.
               </ProjectSectionText>
               <ProjectSectionText>
-                Pada versi online sebelumnya, postingan dapat dipublikasikan langsung melalui API terhubung. Namun karena lingkungan server tidak lagi aktif, 
-                rilis saat ini berfokus pada mode offline yang tetap memberikan pengalaman menulis yang cepat, sederhana, dan dapat diandalkan.
+                Dengan pendekatan offline-first ini, aplikasi tetap konsisten dan dapat diakses kapan pun pengguna membutuhkannya.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={[sliceSidebarLayers, sliceSidebarLayersLarge]}
+                srcSet={[Home, HomeLarge]}
                 placeholder={sliceSidebarLayersPlaceholder}
                 alt="The layers sidebar design, now with user profiles."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
               <Image
                 className={styles.sidebarImage}
-                srcSet={[sliceSidebarAnnotations, sliceSidebarAnnotationsLarge]}
+                srcSet={[blog, blogLarge]}
                 placeholder={sliceSidebarAnnotationsPlaceholder}
                 alt="Multiple user annotations on a shared layer."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
@@ -119,14 +121,17 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
               <ProjectSectionText>
-                Blogin App dirancang agar proses penulisan tetap sederhana dan terfokus. Tampilan daftar postingan dibuat ringkas sehingga pengguna dapat melihat, 
-                membuka, dan mengelola tulisan mereka dengan cepat. Kategori digunakan untuk mengelompokkan konten agar lebih mudah diatur, 
-                terutama pada mode offline yang mengandalkan penyimpanan lokal.
+                Setelah fitur utama berfungsi dengan baik, 
+                saya mulai memperbaiki pengalaman pengguna dengan menata ulang antarmuka agar lebih terstruktur dan mudah dipahami.
+                Editor penulisan dibuat sesederhana mungkin sehingga proses menulis tetap terasa alami tanpa hambatan yang tidak perlu. 
+                Pada tahap pengembangan sebelumnya, saya sempat menguji mode online yang terhubung ke API kolaboratif, 
+                namun karena lingkungan server tersebut sudah tidak aktif, mode tersebut saya jadikan catatan pengembangan. 
+                Fokus rilis yang digunakan saat ini tetap berada pada mode offline yang stabil dan dapat diandalkan.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
-              srcSet={[sliceSlides, sliceSlidesLarge]}
-              placeholder={sliceSlidesPlaceholder}
+              srcSet={[alt, altLarge]}
+              placeholder={altPlaceholder}
               alt="The new My Slides tab in slice, showing annotated and favorited slides."
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
             />
@@ -137,8 +142,8 @@ export const Slice = () => {
             <div className={styles.gridImage}>
               <div className={styles.gridBackground}>
                 <Image
-                  srcSet={[sliceBackgroundBar, sliceBackgroundBarLarge]}
-                  placeholder={sliceBackgroundBarPlaceholder}
+                  srcSet={[konten, kontenLarge]}
+                  placeholder={kontenPlaceholder}
                   alt=""
                   role="presentation"
                   sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
@@ -146,8 +151,8 @@ export const Slice = () => {
               </div>
               <div className={styles.gridForeground}>
                 <Image
-                  srcSet={[sliceAnnotation, sliceAnnotationLarge]}
-                  placeholder={sliceAnnotationPlaceholder}
+                  srcSet={[details, detailsLarge]}
+                  placeholder={detailsPlaceholder}
                   alt="An annotation preview popover with statistics for shape perimeter and area."
                   sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
                 />
@@ -168,15 +173,18 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Blogin App memberikan pengalaman menulis yang cepat, ringan, dan selalu dapat diakses berkat penyimpanan lokal Hive. 
-                Mode offline memungkinkan pengguna membuat serta mengatur postingan tanpa bergantung pada koneksi internet. 
-                Pengelolaan kategori membantu menjaga struktur konten tetap rapi, 
-                sementara integrasi autentikasi email pada versi online sebelumnya menjadi fondasi pengembangan fitur keamanan di masa depan.
+                Blogin berkembang dari sebuah proyek latihan Flutter menjadi aplikasi blogging offline-first yang ringan, 
+                cepat, dan dapat diandalkan tanpa koneksi internet. 
+                Melalui proses ini, saya memperoleh pemahaman yang lebih mendalam mengenai pengelolaan data lokal, 
+                perancangan antarmuka mobile yang sederhana, serta pengembangan fitur inti yang berfokus pada kenyamanan pengguna.
+                Meskipun mode online yang sebelumnya terhubung ke API tidak lagi aktif, 
+                tahap tersebut memberikan pengalaman berharga dalam mempelajari integrasi layanan eksternal dan arsitektur aplikasi yang terhubung. 
+                Setelah itu, saya memusatkan pengembangan pada penyempurnaan mode offline hingga mencapai rilis yang stabil dan siap digunakan.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
-              src={sliceIrl}
-              placeholder={sliceIrlPlaceholder}
+              src={expansi}
+              placeholder={expansiPlaceholder}
               alt="Students at the University of New South Wales using the new collaborative annotation features"
             />
           </ProjectSectionContent>

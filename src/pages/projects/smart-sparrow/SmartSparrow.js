@@ -106,6 +106,7 @@ export const SmartSparrow = () => {
           description={description}
           url="https://www.smartsparrow.com/"
           roles={roles}
+          linkLabel="Kunjungi Repository"
         />
         <ProjectSection padding="top">
           <ProjectSectionContent>

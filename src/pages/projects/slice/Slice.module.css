@@ -52,6 +52,21 @@
     left: auto;
     right: auto;
   }
+
+  /* Tambahan: tablet & mobile jadi full-width dan center */
+  @media (--mediaTablet) {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    align-self: center;
+  }
+
+  @media (--mediaMobile) {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    align-self: center;
+  }
 }
 
 .gridText {
@@ -109,7 +124,25 @@
     position: relative;
     top: -5%;
   }
-  
+}
+
+/* Tambahan: di mobile, dua gambar disusun normal & rata tengah */
+@media (--mediaMobile) {
+  .sidebarImages {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    justify-items: center;
+  }
+
+  .sidebarImage {
+    &:first-child,
+    &:last-child {
+      grid-column: auto;
+      grid-row: auto;
+      top: 0;
+      opacity: 1;
+    }
+  }
 }
 
 .threeImages {

@@ -78,9 +78,10 @@ const ImageElements = ({
   const placeholderRef = useRef();
   const videoRef = useRef();
   const isVideo = getIsVideo(src);
-  const showFullRes = inViewport;
-  const srcSetString = srcSetToString(srcSet);
+  // const showFullRes = inViewport;
   const hasMounted = useHasMounted();
+  const showFullRes = inViewport || hasMounted;
+  const srcSetString = srcSetToString(srcSet);
 
   useEffect(() => {
     const resolveVideoSrc = async () => {

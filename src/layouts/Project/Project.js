@@ -19,6 +19,8 @@ export function ProjectHeader({
   roles,
   className,
   linkLabel = 'Download Online Version', // tambahkan ini
+  secondaryUrl,
+  secondaryLabel = 'Download Offline Version',
 }) {
   return (
     <Section className={classes(styles.header, className)} as="section">
@@ -44,15 +46,17 @@ export function ProjectHeader({
               >
                 {linkLabel}
               </Button>
-              <Button
-                secondary
-                iconHoverShift
-                className={styles.linkButton}
-                icon="chevronRight"
-                href="https://github.com/rupp150406/Blogin/releases/download/v3.0.0/blogin-app.apk"
-              >
-                Download Offline Version
-              </Button>
+              {secondaryUrl && (
+                <Button
+                  secondary
+                  iconHoverShift
+                  className={styles.linkButton}
+                  icon="chevronRight"
+                  href={secondaryUrl}
+                >
+                  {secondaryLabel}
+                </Button>
+              )}
             </>
           )}
         </div>

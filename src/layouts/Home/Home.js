@@ -115,7 +115,7 @@ export const Home = () => {
         title="chiori butique : Laravel E-Commerce WebApp"
         description="Chiori Butique adalah web aplikasi e-commerce berbasis Laravel yang dibuat untuk mengelola produk, brand, user, dan transaksi dengan lebih terstruktur. WebApp ini mencakup sistem autentikasi, dashboard admin, manajemen data dengan CRUD, serta fitur upload dan pengolahan gambar untuk kebutuhan katalog toko online."
         buttonText="Kunjungi repositori"
-        buttonLink="https://github.com/rupp150406/chiori-butique"
+        buttonLink="projects/volkihar-knight"
         model={{
           type: 'laptop',
           alt: 'landing page',
